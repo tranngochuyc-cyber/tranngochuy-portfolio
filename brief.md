@@ -9,7 +9,6 @@
 - Sitemap: Hero → Giới thiệu → Dịch vụ (3 dòng) → Dự án (4) → Quy trình → Liên hệ (form lead)
 
 ## Cần thay
-- 4 dự án minh hoạ → dự án thật + ảnh chụp
 - Số liệu "+38%" ở phần Giới thiệu là minh hoạ
 
 ## Bước tiếp (full-stack)

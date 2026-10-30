@@ -176,6 +176,18 @@
   .tags span{font-size:12px;padding:6px 12px;border-radius:999px;background:rgba(63,208,255,.08);border:1px solid rgba(63,208,255,.2);color:#bfefff}
   .demo-note{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);opacity:.7;margin-top:10px}
 
+  .shot .frame img,.shot .frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:left top;display:block;background:#02101f}
+  .shot.wide{aspect-ratio:16/9}
+  .shot.wide .f1,.work:nth-child(even) .shot.wide .f1{inset:0}
+  .shot.wide video{object-fit:contain;object-position:center}
+  .links{display:flex;gap:12px;flex-wrap:wrap}
+  .more{margin-top:110px;display:grid;grid-template-columns:auto 1fr 1fr;gap:18px;align-items:stretch}
+  .more-label{font-family:var(--display);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);align-self:center;padding-right:10px}
+  .more-card{padding:22px 24px;display:grid;gap:6px;transition:border-color .3s,transform .3s}
+  .more-card:hover{border-color:rgba(159,240,255,.45);transform:translateY(-3px)}
+  .more-card b{font-family:var(--display);font-weight:500;font-size:16px}
+  .more-card span{color:var(--mute);font-size:14px}
+  @media (max-width:960px){.more{grid-template-columns:1fr}}
   /* ---------- Quy trình ---------- */
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:70px;position:relative}
   .steps::before{content:"";position:absolute;left:0;right:0;top:34px;height:1px;background:linear-gradient(90deg,transparent,var(--line),var(--line),transparent)}
@@ -286,7 +298,7 @@
     <a href="#work">Dự án</a>
     <a href="#process">Quy trình</a>
   </div>
-  <a href="#contact" class="btn btn-glow">Bắt đầu<span class="long">&nbsp;dự án</span>
+  <a href="#contact" class="btn btn-glow"><span>Bắt đầu<span class="long"> dự án</span></span>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </nav>
 
@@ -413,106 +425,108 @@
   <div class="wrap">
     <span class="zone rv">Tầng 03 · Vùng vực thẳm</span>
     <h2 class="rv">Những gì đã<br/><em>nổi lên mặt nước</em></h2>
-    <p class="lead rv">Một số dự án tiêu biểu theo từng dòng sản phẩm.</p>
+    <p class="lead rv">Các dự án mình tự làm trong quá trình học. Web nào cũng đang chạy thật trên GitHub Pages, bấm vào là xem được.</p>
 
     <div class="work-list">
-      <!-- Dự án 1 -->
+      <!-- 01 BIỂN -->
       <article class="work">
         <div class="shot rv">
-          <div class="frame f1"><div class="mock" style="background:linear-gradient(150deg,#123d34,#0a2420)">
-            <div class="bar"><i></i><i></i><i></i></div>
-            <div class="body"><div class="h" style="color:#f3e6c8">Cà phê<br/>dưới tán rêu</div><div class="ln" style="width:55%"></div><div class="ln" style="width:40%"></div>
-              <div class="cta" style="background:#e0a95b"></div><div class="cards"><span></span><span></span><span></span></div></div>
-          </div></div>
-          <div class="frame f2"><div class="mock" style="background:linear-gradient(160deg,#e9dcc0,#cdb68e)">
-            <div class="bar"><i></i><i></i><i></i></div>
-            <div class="body"><div class="h" style="color:#1b3a30;font-size:18px">Menu hôm nay</div><div class="ln" style="background:rgba(0,0,0,.18);width:70%"></div><div class="ln" style="background:rgba(0,0,0,.18);width:60%"></div><div class="ln" style="background:rgba(0,0,0,.18);width:66%"></div></div>
-          </div></div>
+          <div class="frame f1"><img src="media/bien.jpg" alt="Trang chủ BIỂN: cá đuối manta bơi dưới mặt nước xanh" loading="lazy"/></div>
+          <div class="frame f2"><img src="media/bien-2.jpg" alt="Tầng chạng vạng của BIỂN với đàn cá và cá đèn lồng" loading="lazy"/></div>
         </div>
         <div class="work-meta">
-          <div class="idx rv">01 — WEB CHỐT KHÁCH</div>
-          <h3 class="rv">Rêu Coffee</h3>
-          <p class="rv">Website cho quán cafe: menu cập nhật từ trang quản trị, đặt bàn qua form, bản đồ và nút Zalo luôn hiện ở góc màn hình.</p>
-          <div class="tags rv"><span>Next.js</span><span>Supabase</span><span>SEO local</span><span>Zalo</span></div>
-          <a href="#contact" class="btn btn-ghost rv">Xem chi tiết <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <div class="demo-note">Dự án minh hoạ</div>
+          <div class="idx rv">01 — WEB 3D · SIGNATURE</div>
+          <h3 class="rv">BIỂN — Khám phá đại dương</h3>
+          <p class="rv">Hành trình cuộn từ mặt nước xuống biển sâu, dựng bằng Three.js: cá đuối manta có animation bơi, shader mặt nước, tia sáng và caustics. Mỗi tầng có hộp thông tin dẫn nguồn Smithsonian Ocean và MBARI, kèm thư viện sinh vật có tìm kiếm và bộ lọc. Có chế độ giảm chuyển động.</p>
+          <div class="tags rv"><span>Three.js</span><span>GLSL shader</span><span>Vite</span><span>GitHub Actions</span></div>
+          <div class="links rv">
+            <a href="https://tranngochuyc-cyber.github.io/web-bien-s2/" target="_blank" rel="noopener" class="btn btn-glow">Xem trực tiếp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a href="https://github.com/tranngochuyc-cyber/web-bien-s2" target="_blank" rel="noopener" class="btn btn-ghost">Mã nguồn</a>
+          </div>
         </div>
       </article>
 
-      <!-- Dự án 2 -->
+      <!-- 02 INDIEVERSE -->
       <article class="work">
         <div class="shot rv">
-          <div class="frame f1"><div class="mock" style="background:radial-gradient(80% 70% at 70% 20%,#3a7bd5,#0b1d3f 70%)">
-            <div class="bar"><i></i><i></i><i></i></div>
-            <div class="body"><div class="h">Sống giữa<br/>dòng sông xanh</div><div class="ln" style="width:50%"></div>
-              <div class="cta" style="background:#9ff0ff"></div><div class="cards"><span></span><span></span><span></span></div></div>
-          </div></div>
-          <div class="frame f2"><div class="mock" style="background:linear-gradient(160deg,#0e2b52,#061227)">
-            <div class="bar"><i></i><i></i><i></i></div>
-            <div class="body"><div class="h" style="font-size:16px">Bảng giá căn hộ</div>
-              <div class="ln" style="width:80%"></div><div class="ln" style="width:72%"></div><div class="ln" style="width:76%"></div><div class="ln" style="width:64%"></div></div>
-          </div></div>
+          <div class="frame f1"><img src="media/indieverse.jpg" alt="Trang chủ Indieverse với các bài review game indie" loading="lazy"/></div>
+          <div class="frame f2"><img src="media/indieverse-2.jpg" alt="Mục Review mới nhất của Indieverse" loading="lazy"/></div>
         </div>
         <div class="work-meta">
-          <div class="idx rv">02 — WEB CHỐT KHÁCH</div>
-          <h3 class="rv">Sông Xanh Residence</h3>
-          <p class="rv">Trang dự án căn hộ: bảng giá lọc theo tầng và hướng, form nhận báo giá gửi thẳng email cho sale, theo dõi chuyển đổi bằng GA4 và Pixel.</p>
-          <div class="tags rv"><span>Lead form</span><span>Resend</span><span>GA4 + Pixel</span></div>
-          <a href="#contact" class="btn btn-ghost rv">Xem chi tiết <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <div class="demo-note">Dự án minh hoạ</div>
+          <div class="idx rv">02 — WEB NỘI DUNG · TƯƠNG TÁC</div>
+          <h3 class="rv">Indieverse</h3>
+          <p class="rv">Trang review và khám phá game indie với danh mục 250 game. Play Lab gợi ý game theo thời gian rảnh và tâm trạng, Game DNA tổng hợp gu chơi từ nhật ký của người đọc, có thêm so sánh hai game. Đăng nhập và đánh giá 1–5 sao chạy qua Supabase.</p>
+          <div class="tags rv"><span>JavaScript</span><span>Supabase</span><span>Kiểm thử nội dung</span></div>
+          <div class="links rv">
+            <a href="https://tranngochuyc-cyber.github.io/indieverse/" target="_blank" rel="noopener" class="btn btn-glow">Xem trực tiếp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a href="https://github.com/tranngochuyc-cyber/indieverse" target="_blank" rel="noopener" class="btn btn-ghost">Mã nguồn</a>
+          </div>
         </div>
       </article>
 
-      <!-- Dự án 3 -->
+      <!-- 03 TÀN TRO MÙA GẶT -->
       <article class="work">
         <div class="shot rv">
-          <div class="frame f1"><div class="mock" style="background:radial-gradient(60% 60% at 50% 40%,#8f7bff,#1a0f3d 60%,#05030f)">
-            <div class="bar"><i></i><i></i><i></i></div>
-            <div class="body" style="align-items:center;justify-content:center;text-align:center">
-              <div style="width:90px;height:90px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#b9a9ff 30%,#5b3fd6 70%);box-shadow:0 0 60px #8f7bff"></div>
-              <div class="h" style="max-width:none;margin-top:16px">LUMEN</div><div class="ln" style="width:40%"></div></div>
-          </div></div>
-          <div class="frame f2"><div class="mock" style="background:linear-gradient(160deg,#1c1240,#090518)">
-            <div class="bar"><i></i><i></i><i></i></div>
-            <div class="body"><div class="h" style="font-size:16px">Scroll story</div><div class="cards"><span style="background:rgba(143,123,255,.4)"></span><span style="background:rgba(63,208,255,.35)"></span><span style="background:rgba(255,138,92,.35)"></span></div></div>
-          </div></div>
+          <div class="frame f1"><img src="media/tantro.jpg" alt="Màn hình chính game Tàn Tro Mùa Gặt" loading="lazy"/></div>
+          <div class="frame f2"><img src="media/tantro-2.jpg" alt="Màn chọn hệ phái trong Tàn Tro Mùa Gặt" loading="lazy"/></div>
         </div>
         <div class="work-meta">
-          <div class="idx rv">03 — WEB SIGNATURE</div>
-          <h3 class="rv">Lumen Skincare</h3>
-          <p class="rv">Trang ra mắt sản phẩm với khối cầu 3D phát sáng xoay theo cuộn chuột, câu chuyện thành phần kể qua từng màn hình.</p>
-          <div class="tags rv"><span>Three.js</span><span>GSAP ScrollTrigger</span><span>Lenis</span></div>
-          <a href="#contact" class="btn btn-ghost rv">Xem chi tiết <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <div class="demo-note">Dự án minh hoạ</div>
+          <div class="idx rv">03 — WEB GAME</div>
+          <h3 class="rv">Tàn Tro Mùa Gặt</h3>
+          <p class="rv">Game hành động roguelite 2D chơi ngay trên trình duyệt. Người chơi vượt 12 màn, đánh bại 3 Chúa Tể Bóng Đêm, nhặt di vật để nâng cấp kỹ năng, có lướt né đòn và nhiều hệ phái để chọn. Bộ kiểm thử tự động đạt 75/75 tiêu chí.</p>
+          <div class="tags rv"><span>HTML5 Canvas</span><span>ES Modules</span><span>Web Audio</span><span>Vite</span></div>
+          <div class="links rv">
+            <a href="https://tranngochuyc-cyber.github.io/tan-tro-mua-gat/" target="_blank" rel="noopener" class="btn btn-glow">Chơi thử <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a href="https://github.com/tranngochuyc-cyber/tan-tro-mua-gat" target="_blank" rel="noopener" class="btn btn-ghost">Mã nguồn</a>
+          </div>
         </div>
       </article>
 
-      <!-- Dự án 4 -->
+      <!-- 04 STUDY SPACE -->
       <article class="work">
         <div class="shot rv">
-          <div class="frame f1"><div class="mock" style="background:linear-gradient(135deg,#ff8a5c,#c2410c 40%,#2a0e05)">
-            <div class="bar"><i></i><i></i><i></i></div>
-            <div class="body" style="justify-content:center;align-items:center">
-              <div style="width:64px;height:64px;border-radius:50%;border:2px solid rgba(255,255,255,.8);display:grid;place-items:center">
-                <div style="width:0;height:0;border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px"></div></div>
-            </div>
-          </div></div>
-          <div class="frame f2"><div class="mock" style="background:#120804">
-            <div class="bar"><i></i><i></i><i></i></div>
-            <div class="body"><div style="display:flex;gap:4px;margin-top:auto">
-              <span style="flex:3;height:16px;border-radius:4px;background:#ff8a5c"></span><span style="flex:2;height:16px;border-radius:4px;background:#3fd0ff"></span><span style="flex:4;height:16px;border-radius:4px;background:#8f7bff"></span></div>
-              <div style="display:flex;gap:4px"><span style="flex:5;height:10px;border-radius:4px;background:rgba(255,255,255,.25)"></span><span style="flex:2;height:10px;border-radius:4px;background:rgba(255,255,255,.15)"></span></div></div>
-          </div></div>
+          <div class="frame f1"><img src="media/studyspace.jpg" alt="Trang chủ Study Space Finder" loading="lazy"/></div>
+          <div class="frame f2"><img src="media/studyspace-2.jpg" alt="Danh sách địa điểm học và bộ lọc của Study Space Finder" loading="lazy"/></div>
         </div>
         <div class="work-meta">
-          <div class="idx rv">04 — VIDEO MOTION</div>
-          <h3 class="rv">Intro thương hiệu 15 giây</h3>
-          <p class="rv">Video motion mở đầu dựng từ chính giao diện website, dùng cho quảng cáo và Reels — cùng màu sắc, cùng nhịp chuyển động.</p>
-          <div class="tags rv"><span>Motion graphic</span><span>Talking head</span><span>9:16 · 16:9</span></div>
-          <a href="#contact" class="btn btn-ghost rv">Xem chi tiết <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <div class="demo-note">Dự án minh hoạ</div>
+          <div class="idx rv">04 — WEB ỨNG DỤNG</div>
+          <h3 class="rv">Study Space Finder</h3>
+          <p class="rv">Web tìm góc học cho sinh viên, viết bằng JavaScript thuần, không framework. Tìm kiếm hỗ trợ gõ không dấu, có lọc theo khu vực, ngân sách, độ yên tĩnh và tiện ích, sắp xếp theo giá, lưu yêu thích. Hộp chi tiết dùng được hoàn toàn bằng bàn phím.</p>
+          <div class="tags rv"><span>HTML · CSS · JS</span><span>Accessibility</span><span>localStorage</span><span>Unit test</span></div>
+          <div class="links rv">
+            <a href="https://tranngochuyc-cyber.github.io/study-space-finder-solo/" target="_blank" rel="noopener" class="btn btn-glow">Xem trực tiếp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a href="https://github.com/tranngochuyc-cyber/study-space-finder-solo" target="_blank" rel="noopener" class="btn btn-ghost">Mã nguồn</a>
+          </div>
         </div>
       </article>
+
+      <!-- 05 VIDEO -->
+      <article class="work">
+        <div class="shot wide rv">
+          <div class="frame f1">
+            <video src="media/antigravity.mp4" poster="media/antigravity-poster.jpg" muted loop playsinline controls preload="metadata" aria-label="Video motion graphics Antigravity 2.0 concept film"></video>
+          </div>
+        </div>
+        <div class="work-meta">
+          <div class="idx rv">05 — VIDEO MOTION GRAPHICS</div>
+          <h3 class="rv">Antigravity 2.0 — Concept Film</h3>
+          <p class="rv">Phim giới thiệu sản phẩm dài 12 giây, quay một mạch không cắt cảnh (one-take). Giao diện tự biến hình qua 5 hồi: biểu tượng, sao chổi, ô chat, bảng chọn model, rồi bùng nổ tên thương hiệu. Dựng bằng HTML và GSAP, xuất video 1920×1080, 60 fps.</p>
+          <div class="tags rv"><span>GSAP</span><span>HTML → Video</span><span>UI Morphing</span><span>1080p · 60 fps</span></div>
+          <div class="demo-note">Concept luyện tập, không phải sản phẩm chính thức của Google</div>
+        </div>
+      </article>
+    </div>
+
+    <div class="more rv">
+      <span class="more-label">Dự án khác</span>
+      <a class="more-card glass" href="https://tranngochuyc-cyber.github.io/nhom3/" target="_blank" rel="noopener">
+        <b>Nhóm 3 — Portfolio nhóm</b>
+        <span>Trưởng nhóm 3 sinh viên, website 4 trang, phân công và báo cáo đóng góp qua GitHub trong 6 tuần.</span>
+      </a>
+      <a class="more-card glass" href="https://github.com/tranngochuyc-cyber/Huy_TranNgoc_125001758" target="_blank" rel="noopener">
+        <b>Review Game — bài thi</b>
+        <span>Chuyển Indieverse thành website tĩnh 4 file, kèm nhật ký prompt khi làm việc với AI.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -633,6 +647,12 @@
     msg.style.color = ''; msg.textContent = 'Đã nhận tín hiệu (bản xem trước — chưa nối cơ sở dữ liệu).'; f.reset();
   });
 
+  /* ---------- Video tự chạy khi cuộn tới ---------- */
+  document.querySelectorAll('.shot video').forEach(v=>{
+    if (reduce || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(es=>es.forEach(e=>{ if (e.isIntersecting) v.play().catch(()=>{}); else v.pause(); }),{threshold:.4}).observe(v);
+  });
+
   /* ---------- Số đếm ---------- */
   function countUp(el){ const end = +el.dataset.count; if (reduce || !window.gsap){ el.textContent = end; return; }
     const o = {v:0}; gsap.to(o,{v:end,duration:2,ease:'power2.out',onUpdate:()=>el.textContent = Math.round(o.v)}); }
@@ -672,7 +692,7 @@
   // Ảnh dự án trôi lệch nhau
   if (!isMobile){
     document.querySelectorAll('.shot').forEach(s=>{
-      gsap.fromTo(s.querySelector('.f2'),{y:60},{y:-40,ease:'none',scrollTrigger:{trigger:s,start:'top bottom',end:'bottom top',scrub:true}});
+      if (s.querySelector('.f2')) gsap.fromTo(s.querySelector('.f2'),{y:60},{y:-40,ease:'none',scrollTrigger:{trigger:s,start:'top bottom',end:'bottom top',scrub:true}});
       gsap.fromTo(s.querySelector('.f1'),{y:-20},{y:20,ease:'none',scrollTrigger:{trigger:s,start:'top bottom',end:'bottom top',scrub:true}});
     });
     gsap.fromTo('.panel-b',{y:50},{y:-30,ease:'none',scrollTrigger:{trigger:'.about-stack',start:'top bottom',end:'bottom top',scrub:true}});

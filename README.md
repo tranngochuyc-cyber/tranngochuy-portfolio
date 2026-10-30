@@ -18,7 +18,20 @@
 | Email liên hệ | [tranngochuyc@gmail.com](mailto:tranngochuyc@gmail.com) |
 | Portfolio Website | [tranngochuyc-cyber.github.io/tranngochuy-portfolio](https://tranngochuyc-cyber.github.io/tranngochuy-portfolio/) |
 
-## 2. Về trang portfolio này
+## 2. Dự án tiêu biểu
+
+| Dự án | Loại | Công nghệ | Link |
+|---|---|---|---|
+| **BIỂN — Khám phá đại dương** | Web 3D | Three.js, GLSL, Vite | [Xem](https://tranngochuyc-cyber.github.io/web-bien-s2/) · [Code](https://github.com/tranngochuyc-cyber/web-bien-s2) |
+| **Indieverse** | Web review game indie | JavaScript, Supabase | [Xem](https://tranngochuyc-cyber.github.io/indieverse/) · [Code](https://github.com/tranngochuyc-cyber/indieverse) |
+| **Tàn Tro Mùa Gặt** | Web game roguelite 2D | HTML5 Canvas, Vite | [Chơi](https://tranngochuyc-cyber.github.io/tan-tro-mua-gat/) · [Code](https://github.com/tranngochuyc-cyber/tan-tro-mua-gat) |
+| **Study Space Finder** | Web ứng dụng | HTML, CSS, JavaScript | [Xem](https://tranngochuyc-cyber.github.io/study-space-finder-solo/) · [Code](https://github.com/tranngochuyc-cyber/study-space-finder-solo) |
+| **Antigravity 2.0 — Concept Film** | Video motion graphics | HTML + GSAP, 1080p 60 fps | [Video](media/antigravity.mp4) |
+| Nhóm 3 — Portfolio nhóm | Bài nhóm (trưởng nhóm) | HTML, CSS | [Xem](https://tranngochuyc-cyber.github.io/nhom3/) |
+
+> Antigravity 2.0 là concept film luyện tập, không phải sản phẩm chính thức của Google.
+
+## 3. Về trang portfolio này
 
 Chủ đề đại dương sâu: “lặn từ 0 m đến 11.000 m” — mỗi phần là một tầng đại dương, nền tối dần khi cuộn, có đồng hồ đo độ sâu.
 
@@ -27,7 +40,7 @@ Chủ đề đại dương sâu: “lặn từ 0 m đến 11.000 m” — mỗi 
 - Font: Unbounded + Be Vietnam Pro
 - Triển khai bằng GitHub Pages (nhánh `main`)
 
-## 3. Chạy thử
+## 4. Chạy thử
 
 Mở `index.html` bằng trình duyệt, hoặc truy cập link GitHub Pages ở trên.
 

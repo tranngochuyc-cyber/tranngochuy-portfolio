@@ -10,7 +10,6 @@
 
 ## Cần thay
 - 4 dự án minh hoạ → dự án thật + ảnh chụp
-- Email / Zalo ở phần Liên hệ
 - Số liệu "+38%" ở phần Giới thiệu là minh hoạ
 
 ## Bước tiếp (full-stack)

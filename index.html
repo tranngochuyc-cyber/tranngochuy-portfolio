@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Huy — Web & Motion Studio</title>
-<meta name="description" content="Portfolio Trần Ngọc Huy — thiết kế website full-stack và video motion, lấy cảm hứng từ đại dương sâu." />
+<meta name="description" content="Portfolio Trần Ngọc Huy — sinh viên CNTT Đại học Lạc Hồng, Creative Developer: Web Development, AI Automation, UI/UX, Motion Graphics." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -128,6 +128,11 @@
   .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
   .chip{font-size:13px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(3,20,38,.35);color:#cfe9f6}
 
+  .profile{margin-top:28px;padding:20px 24px;display:grid;gap:10px;font-size:14px}
+  .profile div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .profile div:last-child{border-bottom:0;padding-bottom:0}
+  .profile dt{color:var(--mute);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding-top:2px}
+  .profile dd{color:#d6eefa}
   /* ---------- Dịch vụ ---------- */
   .svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;margin-bottom:60px}
   .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;perspective:1200px}
@@ -298,7 +303,7 @@
   <svg class="jelly j2"><use href="#jelly"/></svg>
   <svg class="jelly j3"><use href="#jelly"/></svg>
 
-  <div class="hero-kicker rv">Web &amp; Motion Studio — 2026</div>
+  <div class="hero-kicker rv">Creative Developer · Đồng Nai, Việt Nam</div>
   <h1 class="rv">Ngọc Huy<span class="sub">thiết kế từ tầng sâu ý tưởng</span></h1>
   <p class="tag rv">Mình làm website full-stack và video motion cho thương hiệu muốn nổi bật — từ trang bán hàng chốt khách nhanh đến trải nghiệm cuộn đầy chuyển động.</p>
   <div class="hero-cta rv">
@@ -327,8 +332,15 @@
       <p class="lead rv" style="margin-top:14px">Bạn nhận về một sản phẩm tự quản lý được — sửa giá, đăng bài, xem khách để lại thông tin — không cần gọi lập trình viên.</p>
       <div class="skills rv">
         <span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">Supabase</span>
-        <span class="chip">GSAP</span><span class="chip">Three.js</span><span class="chip">PayOS / SePay</span><span class="chip">Motion video</span>
+        <span class="chip">GSAP</span><span class="chip">AI Automation</span><span class="chip">UI/UX</span><span class="chip">Three.js</span><span class="chip">PayOS / SePay</span><span class="chip">Motion video</span>
       </div>
+      <dl class="profile glass rv">
+        <div><dt>Trường</dt><dd>Đại học Lạc Hồng (LHU)</dd></div>
+        <div><dt>Ngành</dt><dd>Công nghệ thông tin</dd></div>
+        <div><dt>Định hướng</dt><dd>Creative Developer / Web Developer</dd></div>
+        <div><dt>Quan tâm</dt><dd>Web Development · AI Automation · UI/UX · Motion Graphics</dd></div>
+        <div><dt>Khu vực</dt><dd>Đồng Nai, Việt Nam</dd></div>
+      </dl>
     </div>
     <div class="about-stack">
       <div class="panel panel-a glass rv">
@@ -401,7 +413,7 @@
   <div class="wrap">
     <span class="zone rv">Tầng 03 · Vùng vực thẳm</span>
     <h2 class="rv">Những gì đã<br/><em>nổi lên mặt nước</em></h2>
-    <p class="lead rv">Một số dự án tiêu biểu. Hãy thay bằng dự án thật của bạn.</p>
+    <p class="lead rv">Một số dự án tiêu biểu theo từng dòng sản phẩm.</p>
 
     <div class="work-list">
       <!-- Dự án 1 -->
@@ -546,7 +558,7 @@
             <span class="msg" id="formMsg" role="status"></span>
           </div>
         </form>
-        <div class="quick"><span>Email: email@cuaban.com</span><span>Zalo: 09xx xxx xxx</span></div>
+        <div class="quick"><a href="mailto:tranngochuyc@gmail.com"><span>Email: tranngochuyc@gmail.com</span></a><a href="https://github.com/tranngochuyc-cyber" target="_blank" rel="noopener"><span>GitHub: tranngochuyc-cyber</span></a></div>
       </div>
     </div>
   </div>
@@ -554,7 +566,7 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Trần Ngọc Huy · Web &amp; Motion Studio</span>
+    <span>© 2026 Trần Ngọc Huy · Sinh viên CNTT, Đại học Lạc Hồng · <a href="https://github.com/tranngochuyc-cyber" target="_blank" rel="noopener" style="color:var(--glow)">GitHub</a></span>
     <span>Lặn từ 0 m đến 11.000 m 🌊</span>
   </div>
 </footer>
